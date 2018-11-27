@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="CoreStoreTests.Account" syncable="YES">
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friends" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="TestEntity1AAA" representedClassName="CoreStoreTests.TestEntity1" syncable="YES">
         <attribute name="testBoolean" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="testData" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -20,6 +25,9 @@
         <attribute name="testNumber" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="testString" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <configuration name="AccountConf">
+        <memberEntity name="Account"/>
+    </configuration>
     <configuration name="Config1">
         <memberEntity name="TestEntity1AAA"/>
     </configuration>
