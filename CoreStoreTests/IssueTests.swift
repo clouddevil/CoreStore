@@ -61,14 +61,14 @@ final class IssueTests: BaseTestCase {
     @objc
     dynamic func test_default_or_nil_configuration_sample() {
 
-        /*
+        //*
         // [nil] vs ["Default"] ??
         
-        let dataStack = prepareStack("DefaultOnly", configurations: [nil], { stack in
+        let dataStack = prepareStack("Model", configurations: [nil], { stack in
             return stack
         })
         // */
-        //*
+        /*
         let dataStack = DataStack(xcodeModelName: "DefaultOnly",
                                   bundle: Bundle(for: type(of: self)))
  
@@ -83,7 +83,7 @@ final class IssueTests: BaseTestCase {
         // */
         
         _ = try! dataStack.perform(synchronous: { (transaction) -> Bool in
-            let accounts = dataStack.fetchAll(From<OtherAccount>())
+            let accounts = dataStack.fetchAll(From<OtherAccount>()) // NOTE: Account is from another db
             XCTAssertNotNil(accounts)
             XCTAssertTrue(accounts!.isEmpty)
             return transaction.hasChanges
