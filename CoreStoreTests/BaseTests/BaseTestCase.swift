@@ -37,10 +37,10 @@ class BaseTestCase: XCTestCase {
     
     @nonobjc
     @discardableResult
-    func prepareStack<T>(configurations: [ModelConfiguration] = [nil], _ closure: (_ dataStack: DataStack) -> T) -> T {
+    func prepareStack<T>(_ modelName:String, configurations: [ModelConfiguration] = [nil], _ closure: (_ dataStack: DataStack) -> T) -> T {
         
         let stack = DataStack(
-            xcodeModelName: "Model",
+            xcodeModelName: modelName,
             bundle: Bundle(for: type(of: self))
         )
         do {
@@ -63,6 +63,13 @@ class BaseTestCase: XCTestCase {
             XCTFail(error.coreStoreDumpString)
         }
         return closure(stack)
+    }
+    
+    @nonobjc
+    @discardableResult
+    func prepareStack<T>(configurations: [ModelConfiguration] = [nil], _ closure: (_ dataStack: DataStack) -> T) -> T {
+        
+        return prepareStack("Model", configurations:configurations, closure);
     }
     
     @nonobjc

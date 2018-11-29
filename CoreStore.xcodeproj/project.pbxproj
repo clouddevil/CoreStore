@@ -66,6 +66,9 @@
 		82BA18D81C4BBD7100A0916E /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E84F2D1AFF849C0064E85B /* WeakObject.swift */; };
 		82BA18DC1C4BBD9C00A0916E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5D372821A39CD6900F583D9 /* Model.xcdatamodeld */; };
 		82BA18DD1C4BBE1400A0916E /* NSFetchedResultsController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5202CF91C04688100DED140 /* NSFetchedResultsController+Convenience.swift */; };
+		9634145E21AF1C5300B68632 /* DefaultOnly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9634145B21AF188100B68632 /* DefaultOnly.xcdatamodeld */; };
+		9634145F21AF1C5400B68632 /* DefaultOnly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9634145B21AF188100B68632 /* DefaultOnly.xcdatamodeld */; };
+		9634146021AF1C5600B68632 /* DefaultOnly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9634145B21AF188100B68632 /* DefaultOnly.xcdatamodeld */; };
 		96FA024D21AD3A1900E3F122 /* IssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FA024C21AD3A1900E3F122 /* IssueTests.swift */; };
 		96FA024E21AD3A1900E3F122 /* IssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FA024C21AD3A1900E3F122 /* IssueTests.swift */; };
 		96FA024F21AD3A1900E3F122 /* IssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FA024C21AD3A1900E3F122 /* IssueTests.swift */; };
@@ -769,6 +772,7 @@
 		82BA18921C4BBCBA00A0916E /* CoreStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BA18DE1C4BBE2600A0916E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		82BA18E01C4BBE2C00A0916E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		9634145C21AF188100B68632 /* DefaultOnly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DefaultOnly.xcdatamodel; sourceTree = "<group>"; };
 		96FA024C21AD3A1900E3F122 /* IssueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTests.swift; sourceTree = "<group>"; };
 		B501FDDC1CA8D05000BE22EF /* CSSectionBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSectionBy.swift; sourceTree = "<group>"; };
 		B501FDE11CA8D1F500BE22EF /* CSListMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSListMonitor.swift; sourceTree = "<group>"; };
@@ -1130,6 +1134,7 @@
 				B5D372821A39CD6900F583D9 /* Model.xcdatamodeld */,
 				2F03A53E19C5C6DA005002A5 /* Info.plist */,
 				B5DBE2DA1C9939E100B5CEFA /* CoreStoreTests-Bridging-Header.h */,
+				9634145B21AF188100B68632 /* DefaultOnly.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -2042,6 +2047,7 @@
 				B525577C1D0291FE00E51965 /* GroupByTests.swift in Sources */,
 				B52557741D02791400E51965 /* WhereTests.swift in Sources */,
 				B5DC47C61C93D22900FA3BF3 /* MigrationChainTests.swift in Sources */,
+				9634145E21AF1C5300B68632 /* DefaultOnly.xcdatamodeld in Sources */,
 				B525576C1CFAF18F00E51965 /* IntoTests.swift in Sources */,
 				B5220E0C1D0D0D19009BC71E /* ImportTests.swift in Sources */,
 				96FA024D21AD3A1900E3F122 /* IssueTests.swift in Sources */,
@@ -2239,6 +2245,7 @@
 				B525577D1D0291FE00E51965 /* GroupByTests.swift in Sources */,
 				B52557751D02791400E51965 /* WhereTests.swift in Sources */,
 				B5DC47C71C93D22900FA3BF3 /* MigrationChainTests.swift in Sources */,
+				9634145F21AF1C5400B68632 /* DefaultOnly.xcdatamodeld in Sources */,
 				B5DBE2E01C9939E100B5CEFA /* BridgingTests.m in Sources */,
 				B5220E0D1D0D0D19009BC71E /* ImportTests.swift in Sources */,
 				96FA024E21AD3A1900E3F122 /* IssueTests.swift in Sources */,
@@ -2436,6 +2443,7 @@
 				B52557761D02791400E51965 /* WhereTests.swift in Sources */,
 				B5DC47C81C93D22900FA3BF3 /* MigrationChainTests.swift in Sources */,
 				B5DBE2E11C9939E100B5CEFA /* BridgingTests.m in Sources */,
+				9634146021AF1C5600B68632 /* DefaultOnly.xcdatamodeld in Sources */,
 				B5220E0E1D0D0D19009BC71E /* ImportTests.swift in Sources */,
 				B525576E1CFAF18F00E51965 /* IntoTests.swift in Sources */,
 				96FA024F21AD3A1900E3F122 /* IssueTests.swift in Sources */,
@@ -3152,6 +3160,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		9634145B21AF188100B68632 /* DefaultOnly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9634145C21AF188100B68632 /* DefaultOnly.xcdatamodel */,
+			);
+			currentVersion = 9634145C21AF188100B68632 /* DefaultOnly.xcdatamodel */;
+			path = DefaultOnly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		B5D372821A39CD6900F583D9 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
